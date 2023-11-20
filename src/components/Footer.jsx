@@ -3,6 +3,10 @@ import Lekki from "../assets/footer/lekki.svg";
 import Rice from "../assets/footer/rice.svg";
 import Obasanjo from "../assets/footer/obasanjo.svg";
 import Cow from "../assets/footer/cow.svg";
+import { FiFacebook } from "react-icons/fi";
+import { TfiTwitter } from "react-icons/tfi";
+import { FaInstagram } from "react-icons/fa";
+import { FiYoutube } from "react-icons/fi";
 function Footer() {
   return (
     <div className="pt-8">
@@ -138,8 +142,11 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-11/12 m-auto py-8">
-        <p>&copy; Copyright 2023 FarmConnect. All Rights Reserved.</p>
+      <div className="w-11/12 m-auto py-8 flex items-center space-x-8">
+        <p>&copy; Copyright 2023 FarmConnect. All Rights Reserved.</p>{" "}
+        <div className="flex space-x-4">
+          <FiFacebook /> <TfiTwitter /> <FaInstagram /> <FiYoutube />
+        </div>
       </div>
     </div>
   );
