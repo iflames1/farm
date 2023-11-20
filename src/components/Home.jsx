@@ -6,6 +6,12 @@ import Livestock from "../assets/home/livestock.svg";
 import Lagos from "../assets/home/lagos.svg";
 import Kano from "../assets/home/kano.svg";
 import Anambra from "../assets/home/anambra.svg";
+import Meat from "../assets/home/meat.svg";
+import Berry from "../assets/home/berry.svg";
+import Carrot from "../assets/home/carrot.svg";
+import Orange from "../assets/home/orange.svg";
+import Chilli from "../assets/home/chilli.svg";
+import Tomatoe from "../assets/home/tomato.svg";
 
 function Home() {
   const optionsDropdown2 = ["All locations", "Option B", "Option C"];
@@ -56,35 +62,36 @@ function Home() {
             <img src={Banana} alt="Banana" className="m-auto" />
             <h2 className="text-lg font-bold mt-2">Fruits</h2>
             <p className="text-center">
-              Explore to get the best <br /> deals on fruits varieties.
+              Explore to get the best deals on <br /> fruits varieties.
             </p>
           </div>
           <div className="text-center">
             <img src={Vegatable} alt="Vegatable" className="m-auto" />
             <h2 className="text-lg font-bold mt-2">Vegatables</h2>
             <p>
-              Get farm fresh vegetables <br /> for your healthy meals
+              Get farm fresh vegetables for <br />
+              your healthy meals
             </p>
           </div>
           <div className="text-center">
             <img src={Livestock} alt="Livestock" className="m-auto" />
             <h2 className="text-lg font-bold mt-2">Livestock</h2>
             <p>
-              You can buy live farm <br /> animals or processed one{" "}
+              You can buy live farm animals or <br /> processed one{" "}
             </p>
           </div>
         </div>
 
         <div className="w-11/12 m-auto py-16">
           <div className="">
-            <h1 className="lg:text-3xl font-bold">Featured Farmers</h1>
+            <h1 className="lg:text-2xl font-bold">Featured Farmers</h1>
             <p className="py-2 text-xl">
               See our top pick for farmers by people
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-3 py-4">
-            <div className=" m-auto max-w-sm rounded-xl  bg-white border border-gray-300 ">
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 py-4">
+            <div className=" m-auto max-w-sm rounded-xl bg-white border border-gray-300 ">
               <a href="">
                 <img
                   src={Lagos}
@@ -124,6 +131,76 @@ function Home() {
                 <h1 className="pb-1 text-xl font-bold">Okoro Kamsiochukwu</h1>
                 <h1 className="text-green-500 text-lg">Anambra, Nigeria</h1>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-11/12 m-auto">
+          <div className="">
+            <h1 className="lg:text-2xl font-bold">Featured Products</h1>
+            <p className="py-2 text-xl text-left">
+              Check out frequently purchased farm produce
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-7 pb-2">
+            <div className="m-auto boxshadow rounded-2xl  bg-white border ">
+              <a href="">
+                <img
+                  src={Meat}
+                  alt=""
+                  className="rounded-t-xl w-[400px]  object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="m-auto boxshadow rounded-2xl  bg-white border ">
+              <a href="">
+                <img
+                  src={Berry}
+                  alt=""
+                  className="rounded-t-xl w-[400px] object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="m-auto boxshadow rounded-2xl  bg-white border ">
+              <a href="">
+                <img
+                  src={Carrot}
+                  alt=""
+                  className="rounded-t-xl w-[400px] object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="m-auto boxshadow rounded-2xl bg-white border ">
+              <a href="">
+                <img
+                  src={Orange}
+                  alt=""
+                  className="rounded-t-xl w-[400px] object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="m-auto boxshadow rounded-2xl  bg-white border ">
+              <a href="">
+                <img
+                  src={Chilli}
+                  alt=""
+                  className="rounded-t-xl w-[400px] object-cover"
+                />
+              </a>
+            </div>
+
+            <div className="m-auto boxshadow rounded-2xl  bg-white border ">
+              <a href="">
+                <img
+                  src={Tomatoe}
+                  alt=""
+                  className="rounded-t-xl w-[400px] object-cover"
+                />
+              </a>
             </div>
           </div>
         </div>
