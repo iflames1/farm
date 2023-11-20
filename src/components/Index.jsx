@@ -1,7 +1,23 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./home/Home";
+import Farmers from "./Farmers";
+import Location from "./Location";
+import Contact from "./Contact";
+import Login from "./Login";
+import Register from "./Register";
 
 function Index() {
-  return <div>Index</div>;
+  return (
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+      <Route path="/Farmers" exact element={<Farmers />} />
+      <Route path="/Location" exact element={<Location />} />
+      <Route path="/Contact" exact element={<Contact />} />
+      <Route path="/Login" exact element={<Login />} />
+      <Route path="/Register" exact element={<Register />} />
+    </Routes>
+  );
 }
 
 export default Index;

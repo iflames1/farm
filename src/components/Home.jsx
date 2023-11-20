@@ -21,6 +21,7 @@ function Home() {
   return (
     <div>
       <div>
+        {/* Done */}
         <div className="">
           <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
             <h1 className="font-bold text-4xl pb-3">Find Nearby Farmers</h1>
@@ -58,6 +59,7 @@ function Home() {
           </form>
         </div>
 
+        {/* Done */}
         <div className="flex justify-between w-11/12 m-auto mt-8">
           <div className="text-center items-center justify-center">
             <img src={Banana} alt="Banana" className="m-auto" />
@@ -82,7 +84,6 @@ function Home() {
             </p>
           </div>
         </div>
-
         <div className="w-11/12 m-auto py-16">
           <div className="">
             <h1 className="lg:text-2xl font-bold">Featured Farmers</h1>
@@ -90,7 +91,6 @@ function Home() {
               See our top pick for farmers by people
             </p>
           </div>
-
           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 py-4">
             <div className=" m-auto max-w-sm rounded-xl bg-white border border-gray-300 ">
               <a href="">
@@ -105,7 +105,6 @@ function Home() {
                 <h1 className="text-green-500 text-lg">Lagos, Nigeria</h1>
               </div>
             </div>
-
             <div className=" m-auto max-w-sm rounded-xl  bg-white border border-gray-300 ">
               <a href="">
                 <img
@@ -119,7 +118,6 @@ function Home() {
                 <h1 className="text-green-500 text-lg">Kano, Nigeria</h1>
               </div>
             </div>
-
             <div className=" m-auto max-w-sm rounded-xl  bg-white border border-gray-300 ">
               <a href="">
                 <img
@@ -135,7 +133,6 @@ function Home() {
             </div>
           </div>
         </div>
-
         <div className="w-11/12 m-auto pb-10">
           <div className="">
             <h1 className="lg:text-2xl font-bold">Featured Products</h1>
@@ -153,7 +150,6 @@ function Home() {
                 />
               </a>
             </div>
-
             <div className="m-auto boxshadow rounded-2xl  bg-white border ">
               <a href="">
                 <img
@@ -163,7 +159,6 @@ function Home() {
                 />
               </a>
             </div>
-
             <div className="m-auto boxshadow rounded-2xl  bg-white border ">
               <a href="">
                 <img
@@ -173,7 +168,6 @@ function Home() {
                 />
               </a>
             </div>
-
             <div className="m-auto boxshadow rounded-2xl bg-white border ">
               <a href="">
                 <img
@@ -183,7 +177,6 @@ function Home() {
                 />
               </a>
             </div>
-
             <div className="m-auto boxshadow rounded-2xl  bg-white border ">
               <a href="">
                 <img
@@ -193,7 +186,6 @@ function Home() {
                 />
               </a>
             </div>
-
             <div className="m-auto boxshadow rounded-2xl  bg-white border ">
               <a href="">
                 <img
@@ -206,6 +198,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Done */}
         <div className="bg-[#F5F5F5]">
           <div className="w-10/12 m-auto py-8 ">
             <div className="">
@@ -227,7 +220,6 @@ function Home() {
                   location to select farms nearby
                 </p>
               </div>
-
               <div className="bg-gray-100 m-auto md:py-4 py-8 p-4">
                 <h1 className="flex items-center font-bold text-xl">
                   <BsPlusCircleFill size={20} className="text-[#008033] mr-4" />
@@ -240,7 +232,6 @@ function Home() {
                   fruits and vegies in stock
                 </p>
               </div>
-
               <div className="bg-gray-100 m-auto md:py-4 py-8 p-4">
                 <h1 className="flex items-center font-bold text-xl">
                   <BsPlusCircleFill size={20} className="text-[#008033] mr-4" />
@@ -258,6 +249,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Done */}
         <div className="w-11/12 m-auto pt-8">
           <h1 className="lg:text-2xl text-left font-bold py-2">
             Browse by State
@@ -266,7 +258,6 @@ function Home() {
             Select the state you are in to get farmers in tha state
           </p>
         </div>
-
         <div className="grid sm:grid-cols-1 md:grid-cols-4 w-11/12 m-auto gap-8">
           <div className="py-6 pb-6 text-[#008033]">
             <ul className="py-2">
@@ -307,7 +298,6 @@ function Home() {
               </a>
             </ul>
           </div>
-
           <div className="py-6 text-[#008033]">
             <ul className="py-2">
               <a href="">
@@ -347,7 +337,6 @@ function Home() {
               </a>
             </ul>
           </div>
-
           <div className="py-6 text-[#008033]">
             <ul className="py-2">
               <a href="">
@@ -387,7 +376,6 @@ function Home() {
               </a>
             </ul>
           </div>
-
           <div className="py-6 text-[#008033]">
             <ul className="py-2">
               <a href="">
