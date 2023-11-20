@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Navigation() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/");
+  };
   return (
-    <div className="bg-[#008033] py-4 isolate sticky top-0">
+    <div className="bg-[#008033] py-4 isolate z-10 sticky top-0">
       <div className="w-11/12 m-auto flex justify-between items-center">
         <div className="flex justify-between items-center w-[25%]">
           <img src={Logo} alt="logo" className="pr-16" />
@@ -12,7 +17,9 @@ function Navigation() {
         </div>
         <ul className="flex items-center justify-between w-[65%]">
           <li className="text-white text-2xl">
-            <a href="/">Home</a>
+            <a href="/" onClick={handleClick}>
+              Home
+            </a>
           </li>
           <li className="text-white text-2xl">
             <a href="/Farmers">Farmers</a>
