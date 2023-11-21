@@ -1,4 +1,5 @@
 import React from "react";
+import Deserve from "../home/Deserve";
 import star from "../../assets/contact/star.png";
 import broccoli1 from "../../assets/contact/broccoli1.png";
 import broccoli2 from "../../assets/contact/broccoli2.png";
@@ -69,6 +70,9 @@ function Body() {
             price="N-5,000"
           />
         </div>
+      </div>
+      <div>
+        <Deserve />
       </div>
     </div>
   );
