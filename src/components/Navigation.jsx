@@ -1,43 +1,135 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navigation() {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/");
   };
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleClickIcon = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="bg-[#008033] py-4 isolate z-10 sticky top-0">
-      <div className="w-11/12 m-auto flex justify-between items-center">
+      <div className="w-full h-10 px-4 m-auto flex justify-between items-center">
         <div className="flex justify-between items-center w-[25%]">
-          <img src={Logo} alt="logo" className="pr-16" />
-          <span className="text-white text-4xl font-bold">FarmConnect</span>
+          <Link to="/" className="hidden lg:flex">
+            <img src={Logo} alt="logo" className="w-full" />
+          </Link>
+          <Link to="/">
+            <span className="text-white text-3xl lg:text-4xl font-bold">
+              FarmConnect
+            </span>
+          </Link>
         </div>
-        <ul className="flex items-center justify-between w-[65%]">
-          <li className="text-white text-2xl">
-            <a href="/" onClick={handleClick}>
+
+        {/* Larger screen */}
+        <ul className="lg:flex items-center hidden space-x-4">
+          <li className="text-white text-2xl hover:font-bold">
+            <Link to="/" onClick={handleClick}>
               Home
-            </a>
+            </Link>
           </li>
           <li className="text-white text-2xl">
-            <a href="/Farmers">Farmers</a>
+            <Link to="/Farmers" onClick={handleClick}>
+              Farmers
+            </Link>
           </li>
           <li className="text-white text-2xl">
-            <a href="/Location">Location</a>
+            <Link to="/Location" onClick={handleClick}>
+              Location
+            </Link>
           </li>
           <li className="text-white text-2xl">
-            <a href="/Contact">Contact</a>
+            <Link to="/Contact" onClick={handleClick}>
+              Contact
+            </Link>
           </li>
-          <li className="text-white font-bold border border-white py-2 px-4 ">
-            <a href="/Login">Login</a>
+          <li className="text-white font-bold border hover:bg-white hover:text-[#008033] border-white py-2 px-4 ">
+            <Link to="/Login" onClick={handleClick}>
+              Login
+            </Link>
           </li>
           <li className="bg-white font-bold text-[#008033] px-4 py-2">
-            <a href="/Register">Register</a>
+            <Link to="/Register" onClick={handleClick}>
+              Register
+            </Link>
           </li>
         </ul>
       </div>
+
+      {/* Meduim screen Icon */}
+      <div className="lg:hidden">
+        {isMenuOpen ? (
+          <FaTimes
+            onClick={handleClickIcon}
+            size={35}
+            color="white"
+            className="top-6 absolute right-4 cursor-pointer "
+          />
+        ) : (
+          <FaBars
+            onClick={handleClickIcon}
+            size={30}
+            color="white"
+            className="top-6 absolute right-4 cursor-pointer "
+          />
+        )}
+      </div>
+
+      {/* Medium screen nav */}
+      {isMenuOpen && (
+        <ul className="lg:hidden flex flex-col items-center space-y-10 px-5 py-6 bg-[#008033] w-full">
+          <li className="text-white text-2xl hover:font-bold">
+            <Link to="/" onClick={handleClick}>
+              Home
+            </Link>
+          </li>
+          <li className="text-white text-2xl hover:font-bold">
+            <Link to="/Farmers" onClick={handleClick}>
+              Farmers
+            </Link>
+          </li>
+          <li className="text-white text-2xl hover:font-bold">
+            <Link to="/Location" onClick={handleClick}>
+              Location
+            </Link>
+          </li>
+          <li className="text-white text-2xl hover:font-bold">
+            <Link to="/Contact" onClick={handleClick}>
+              Contact
+            </Link>
+          </li>
+          <li className="">
+            <Link to="/Login" onClick={handleClick}>
+              <button
+                className="text-white text-2xl border hover:font-bold hover:bg-white hover:text-[#008033] border-white py-2 px-4 rounded "
+                type="submit"
+              >
+                Login
+              </button>
+            </Link>
+          </li>
+          <li className="">
+            <Link to="/Register" onClick={handleClick}>
+              <button
+                className="bg-white text-2xl text-[#008033] px-4 py-2 hover:font-bold rounded"
+                type="submit"
+              >
+                Register
+              </button>
+            </Link>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }

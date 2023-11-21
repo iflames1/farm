@@ -6,11 +6,13 @@ import Index from "./components/Index";
 
 function App() {
   return (
-    <Router>
-      <Navigation />
-      <Index />
-      <Footer />
-    </Router>
+    <div>
+      <Router>
+        <Navigation />
+        <Index />
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

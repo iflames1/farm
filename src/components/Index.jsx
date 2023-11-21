@@ -11,11 +11,11 @@ function Index() {
   return (
     <Routes>
       <Route path="/" exact element={<Home />} />
-      <Route path="/Farmers" exact element={<Farmers />} />
-      <Route path="/Location" exact element={<Location />} />
-      <Route path="/Contact" exact element={<Contact />} />
-      <Route path="/Login" exact element={<Login />} />
-      <Route path="/Register" exact element={<Register />} />
+      <Route path="/Farmers" element={<Farmers />} />
+      <Route path="/Location" element={<Location />} />
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
     </Routes>
   );
 }
