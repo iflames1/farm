@@ -1,43 +1,16 @@
 import React from "react";
-import Lekki from "../assets/footer/lekki.svg";
-import Rice from "../assets/footer/rice.svg";
-import Obasanjo from "../assets/footer/obasanjo.svg";
-import Cow from "../assets/footer/cow.svg";
 import { FiFacebook } from "react-icons/fi";
 import { TfiTwitter } from "react-icons/tfi";
 import { FaInstagram } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 function Footer() {
   return (
-    <div className="pt-8">
-      <div className="w-11/12 m-auto pb-8 flex flex-wrap">
-        <img
-          src={Lekki}
-          alt=""
-          className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"
-        />
-        <img
-          src={Rice}
-          alt=""
-          className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"
-        />
-        <img
-          src={Obasanjo}
-          alt=""
-          className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"
-        />
-        <img
-          src={Cow}
-          alt=""
-          className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4"
-        />
-      </div>
-
+    <div>
       <div className="bg-[#F5F5F5]">
-        <div className="w-11/12 m-auto flex py-16">
-          <div className="flex justify-between font-bold w-[70%]">
-            <ul className="">
-              <li className="font-bold text-xl pb-6">Company</li>
+        <div className="w-11/12 m-auto md:flex py-16">
+          <div className="lg:flex justify-between font-bold w-full md:w-[70%]">
+            <ul className="sm:pb-6">
+              <li className="font-bold text-xl pb-3">Company</li>
               <li className="text-[#33f07f] pb-3">
                 <a href="#">FAQ</a>
               </li>
@@ -57,8 +30,8 @@ function Footer() {
                 <a href="#">Privacy policy</a>
               </li>
             </ul>
-            <ul className="">
-              <li className="font-bold text-xl pb-6">Top Cities</li>
+            <ul className="sm:pb-6">
+              <li className="font-bold text-xl pb-3">Top Cities</li>
               <li className="text-[#33f07f] pb-3">
                 <a href="#">Farms in Abuja</a>
               </li>
@@ -78,8 +51,8 @@ function Footer() {
                 <a href="#">Farms in Kogi</a>
               </li>
             </ul>
-            <ul>
-              <li className="font-bold text-xl pb-6">Top Product</li>
+            <ul className="sm:pb-6">
+              <li className="font-bold text-xl pb-3">Top Product</li>
               <li className="text-[#33f07f] pb-3">
                 <a href="#">Onion</a>
               </li>
@@ -99,8 +72,8 @@ function Footer() {
                 <a href="#">Lettuce</a>
               </li>
             </ul>
-            <ul>
-              <li className="font-bold text-xl pb-6">Services</li>
+            <ul className="">
+              <li className="font-bold text-xl pb-3">Services</li>
               <li className="text-[#33f07f] pb-3">
                 <a href="#">Nationwide Delivery</a>
               </li>
@@ -121,7 +94,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="pl-10 text-xl">
+
+          <div className="md:pl-10 text-xl ">
             <h1 className="pb-8 font-bold">
               Enter your E-mail address to get farm updates
             </h1>
@@ -129,7 +103,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter your Email Address"
-                className="border border-white focus:border-none text-black p-2 mb-8 w-[300px] text-center"
+                className="border outline-none border-white text-black p-2 mb-8 w-[300px] text-center"
               />
               <button
                 type="submit"
@@ -142,9 +116,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-11/12 m-auto py-8 flex items-center space-x-8">
+      <div className="w-11/12 m-auto py-8 md:flex items-center space-x-8">
         <p>&copy; Copyright 2023 FarmConnect. All Rights Reserved.</p>{" "}
-        <div className="flex space-x-4">
+        <div className="flex md:space-x-4 space-x-8 ">
           <FiFacebook /> <TfiTwitter /> <FaInstagram /> <FiYoutube />
         </div>
       </div>

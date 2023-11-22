@@ -20,7 +20,7 @@ function Navigation() {
   return (
     <div className="bg-[#008033] py-4 isolate z-10 sticky top-0">
       <div className="w-full h-10 px-4 m-auto flex justify-between items-center">
-        <div className="flex justify-between items-center w-[25%]">
+        <div className="flex space-x-4 items-center w-[25%]">
           <Link to="/" className="hidden lg:flex">
             <img src={Logo} alt="logo" className="w-full" />
           </Link>
@@ -53,12 +53,12 @@ function Navigation() {
               Contact
             </Link>
           </li>
-          <li className="text-white font-bold border hover:bg-white hover:text-[#008033] border-white py-2 px-4 ">
+          <li className="text-white font-bold border hover:bg-white hover:text-[#008033] border-white py-2 px-4 rounded">
             <Link to="/Login" onClick={handleClick}>
               Login
             </Link>
           </li>
-          <li className="bg-white font-bold text-[#008033] px-4 py-2">
+          <li className="bg-white font-bold text-[#008033] px-4 py-2 rounded">
             <Link to="/Register" onClick={handleClick}>
               Register
             </Link>
