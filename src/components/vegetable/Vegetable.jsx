@@ -1,7 +1,7 @@
 import React from "react";
 import Body from "./Body";
 
-function Contact() {
+function Vegetable() {
   return (
     <div>
       <Body />
@@ -9,4 +9,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Vegetable;

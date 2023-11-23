@@ -3,9 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./home/Home";
 import Farmers from "./farmers/Farmers";
 import Location from "./Location";
-import Contact from "./contact/Contact";
+import Contact from "./Contact";
 import Login from "./Login";
 import Register from "./Register";
+import Vegetable from "./vegetable/Vegetable";
 
 function Index() {
   return (
@@ -17,6 +18,8 @@ function Index() {
       <Route path="/Contact" element={<Contact />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
+
+      <Route path="/vegetables" element={<Vegetable />} />
     </Routes>
   );
 }

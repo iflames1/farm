@@ -1,6 +1,6 @@
 import React from "react";
 import Banana from "../../assets/home/banana.svg";
-import Vegatable from "../../assets/home/vegetable.svg";
+import Vegetable from "../../assets/home/vegetable.svg";
 import Livestock from "../../assets/home/livestock.svg";
 import Lagos from "../../assets/home/lagos.svg";
 import Kano from "../../assets/home/kano.svg";
@@ -11,6 +11,7 @@ import Carrot from "../../assets/home/carrot.svg";
 import Orange from "../../assets/home/orange.svg";
 import Chilli from "../../assets/home/chilli.svg";
 import Tomatoe from "../../assets/home/tomato.svg";
+import { Link } from "react-router-dom";
 
 function Body() {
   return (
@@ -24,9 +25,12 @@ function Body() {
               Explore to get the best deals on <br /> fruits varieties.
             </p>
           </div>
-          <div className="text-center pb-6 items-center justify-center">
+          <Link
+            to="/vegetables"
+            className="text-center pb-6 items-center justify-center"
+          >
             <img
-              src={Vegatable}
+              src={Vegetable}
               width={200}
               alt="Vegatable"
               className="m-auto"
@@ -36,7 +40,7 @@ function Body() {
               Get farm fresh vegetables for <br />
               your healthy meals
             </p>
-          </div>
+          </Link>
           <div className="text-center">
             <img
               src={Livestock}
