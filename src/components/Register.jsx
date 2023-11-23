@@ -80,24 +80,33 @@ function Register() {
               </div>
 
               {/* Buttons */}
-              <button
-                className="bg-[#008033] rounded-lg text-white hover:font-bold py-4 md:text-3xl border hover:border-[#008033] hover:bg-white hover:text-[#008033]"
+              <Link
+                to="/Home"
                 type="submit"
+                className="bg-[#008033] text-center rounded-lg text-white hover:font-bold py-4 md:text-3xl border hover:border-[#008033] hover:bg-white hover:text-[#008033]"
               >
                 Create Account
-              </button>
+              </Link>
             </form>
             <h1 className="py-10 md:text-3xl text-center">OR</h1>
             <div className="grid gap-6 pb-8">
               {/* Sign up with Facebook */}
-              <button className="bg-white rounded-lg text-black hover:font-bold py-4 md:text-3xl border border-black hover:border-[#008033] hover:text-[#008033]">
+              <Link
+                to="/Home"
+                type="submit"
+                className="bg-white text-center rounded-lg text-black hover:font-bold py-4 md:text-3xl border border-black hover:border-[#008033] hover:text-[#008033]"
+              >
                 Sign up with Facebook
-              </button>
+              </Link>
 
               {/* Sign up with Instagram */}
-              <button className="bg-white rounded-lg text-black hover:font-bold py-4 md:text-3xl border border-black hover:border-[#008033] hover:text-[#008033]">
+              <Link
+                to="/Home"
+                type="submit"
+                className="bg-white text-center rounded-lg text-black hover:font-bold py-4 md:text-3xl border border-black hover:border-[#008033] hover:text-[#008033]"
+              >
                 Sign up with Instagram
-              </button>
+              </Link>
             </div>
             <Link
               to="/Login"

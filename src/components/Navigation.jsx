@@ -7,7 +7,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navigation() {
   const navigate = useNavigate();
+
   const handleClick = () => {
+    setMenuOpen(false);
     navigate("/");
   };
 
@@ -89,27 +91,57 @@ function Navigation() {
       {isMenuOpen && (
         <ul className="lg:hidden flex flex-col items-center space-y-10 px-5 py-6 bg-[#008033] w-full">
           <li className="text-white text-2xl hover:font-bold">
-            <Link to="/" onClick={handleClick}>
+            <Link
+              to="/Home"
+              onClick={() => {
+                handleClick();
+                navigate("/Home");
+              }}
+            >
               Home
             </Link>
           </li>
           <li className="text-white text-2xl hover:font-bold">
-            <Link to="/Farmers" onClick={handleClick}>
+            <Link
+              to="/Farmers"
+              onClick={() => {
+                handleClick();
+                navigate("/Farmers");
+              }}
+            >
               Farmers
             </Link>
           </li>
           <li className="text-white text-2xl hover:font-bold">
-            <Link to="/Location" onClick={handleClick}>
+            <Link
+              to="/Location"
+              onClick={() => {
+                handleClick();
+                navigate("/Location");
+              }}
+            >
               Location
             </Link>
           </li>
           <li className="text-white text-2xl hover:font-bold">
-            <Link to="/Contact" onClick={handleClick}>
+            <Link
+              to="/Contact"
+              onClick={() => {
+                handleClick();
+                navigate("/Contact");
+              }}
+            >
               Contact
             </Link>
           </li>
           <li className="">
-            <Link to="/Login" onClick={handleClick}>
+            <Link
+              to="/Login"
+              onClick={() => {
+                handleClick();
+                navigate("/Login");
+              }}
+            >
               <button
                 className="text-white text-2xl border hover:font-bold hover:bg-white hover:text-[#008033] border-white py-2 px-4 rounded "
                 type="submit"
@@ -119,7 +151,13 @@ function Navigation() {
             </Link>
           </li>
           <li className="">
-            <Link to="/Register" onClick={handleClick}>
+            <Link
+              to="/Register"
+              onClick={() => {
+                handleClick();
+                navigate("/Register");
+              }}
+            >
               <button
                 className="bg-white text-2xl text-[#008033] px-4 py-2 hover:font-bold rounded"
                 type="submit"

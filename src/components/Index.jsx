@@ -10,7 +10,8 @@ import Register from "./Register";
 function Index() {
   return (
     <Routes>
-      <Route path="/" exact element={<Home />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/Farmers" element={<Farmers />} />
       <Route path="/Location" element={<Location />} />
       <Route path="/Contact" element={<Contact />} />
