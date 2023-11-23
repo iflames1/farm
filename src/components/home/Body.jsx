@@ -18,13 +18,16 @@ function Body() {
     <div className="bg-white">
       <div>
         <div className="md:flex justify-between w-10/12 m-auto mt-8">
-          <div className="text-center pb-6 items-center justify-center">
+          <Link
+            to="/vegetables"
+            className="text-center pb-6 items-center justify-center"
+          >
             <img src={Banana} width={200} alt="Banana" className="m-auto" />
             <h2 className="text-lg font-bold mt-2">Fruits</h2>
             <p className="text-center">
               Explore to get the best deals on <br /> fruits varieties.
             </p>
-          </div>
+          </Link>
           <Link
             to="/vegetables"
             className="text-center pb-6 items-center justify-center"
@@ -41,7 +44,7 @@ function Body() {
               your healthy meals
             </p>
           </Link>
-          <div className="text-center">
+          <Link to="/vegetables" className="text-center">
             <img
               src={Livestock}
               alt="Livestock"
@@ -52,7 +55,7 @@ function Body() {
             <p>
               You can buy live farm animals or <br /> processed one{" "}
             </p>
-          </div>
+          </Link>
         </div>
 
         <div className="w-11/12 m-auto py-2">
