@@ -15,8 +15,8 @@ function Register() {
       </h2>
       <div className="md:w-8/12 w-10/12 md:py-16 py-8 m-auto">
         <div className="bg-[#F5F5F5]">
-          <div className="w-11/12 md:py-6 m-auto">
-            <h1 className="md:text-3xl text-xl text-center py-8 font-bold">
+          <div className="w-11/12 py-6 m-auto">
+            <h1 className="md:text-3xl text-xl text-center pb-8 font-bold">
               Register
             </h1>
             <form className="grid gap-4 items-center">
@@ -26,7 +26,7 @@ function Register() {
                 name="fullName"
                 placeholder="Full Name"
                 required
-                className="p-4 md:text-2xl md:w-full w-60 border outline-none border-[#008033] rounded-lg mb-8"
+                className="p-4 md:text-2xl w-full border outline-none border-[#008033] rounded-lg mb-8"
               />
 
               {/* Email Address */}
@@ -35,7 +35,7 @@ function Register() {
                 name="email"
                 placeholder="Email Address"
                 required
-                className="p-4 md:text-2xl md:w-full w-60 border outline-none border-[#008033] rounded-lg mb-8"
+                className="p-4 md:text-2xl w-full border outline-none border-[#008033] rounded-lg mb-8"
               />
 
               {/* Password */}
@@ -44,33 +44,33 @@ function Register() {
                 name="password"
                 placeholder="Password"
                 required
-                className="p-4 md:text-2xl md:w-full w-60 border outline-none border-[#008033] rounded-lg mb-8"
+                className="p-4 md:text-2xl w-full border outline-none border-[#008033] rounded-lg mb-8"
               />
 
               <h1 className="md:text-3xl text-xl font-bold">Account Type</h1>
 
               {/* Radio Options */}
               <div className="grid gap-2 md:text-2xl">
-                <label>
+                <label className="flex space-x-2 items-center">
                   <input
                     type="radio"
                     name="accountType"
                     value="Wholesaler/Retailer"
                   />
-                  Wholesaler/Retailer
+                  <p>Wholesaler/Retailer</p>
                 </label>
-                <label className="">
+                <label className="flex space-x-2 items-center">
                   <input
                     type="radio"
                     name="accountType"
                     value="Farmer"
                     className=""
                   />
-                  Farmer
+                  <p>Farmer</p>
                 </label>
-                <label>
+                <label className="flex space-x-2 items-center">
                   <input type="radio" name="accountType" value="Logistics" />
-                  Logistics
+                  <p>Logistics</p>
                 </label>
 
                 <p className="py-6 md:text-3xl">
