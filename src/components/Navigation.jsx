@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.ico";
 import { useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -25,7 +25,7 @@ function Navigation() {
       <div className="w-full h-10 px-4 m-auto flex justify-between items-center">
         <div className="flex space-x-4 items-center w-[25%]">
           <Link to="/" className="hidden lg:flex">
-            <img src={Logo} alt="logo" className="w-full" />
+            <img src={Logo} width={50} alt="logo" className="" />
           </Link>
           <Link to="/">
             <span className="text-white text-3xl lg:text-4xl font-bold">
