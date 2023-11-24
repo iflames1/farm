@@ -1,9 +1,10 @@
-import React from "react";
 import Body from "./Body";
+import Top from "./Top";
 
 function Vegetable() {
   return (
     <div>
+      <Top />
       <Body />
     </div>
   );
